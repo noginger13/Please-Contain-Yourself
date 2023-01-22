@@ -165,15 +165,15 @@ docker build -t nodeserver .
 
 - [x] Your image has been assembled and saved on your machine just like your perfect sandwich stored in the fridge - now let's start creating containers from it! Run `docker run -d -p 1000:3000 --name slytherin_rulez --rm nodeserver`
 
-- [ ] Check that it is running with `docker ps` and then visit `localhost:1000` in your browser
+- [x] Check that it is running with `docker ps` and then visit `localhost:1000` in your browser
 
 You'll see that our server is sending us a greeting along with a random number it was assigned when it was spun up.
 
-- [ ] Containers are stateless; they retain information about themselves only as long as they are running. For example: try refreshing the page - it has no effect on the number. Now, back in the terminal, run `docker restart slytherin_rulez`
+- [x] Containers are stateless; they retain information about themselves only as long as they are running. For example: try refreshing the page - it has no effect on the number. Now, back in the terminal, run `docker restart slytherin_rulez`
 
-- [ ] Go back to the browser and refresh the page. The number changed! What?? Because containers are stateless, restarting it caused everything within it to be lost.
+- [x] Go back to the browser and refresh the page. The number changed! What?? Because containers are stateless, restarting it caused everything within it to be lost.
 
-- [ ] And just for fun; make like, 3 more containers from our server image, each on a different port
+- [x] And just for fun; make like, 3 more containers from our server image, each on a different port
 
 On port 2000:
 ```sh
@@ -190,11 +190,11 @@ On port 4000:
 docker run -d -p 4000:3000 --rm nodeserver
 ```
 
-- [ ] Open them all up on different tabs in your browser! They're all unique and independent containers serving you information! NEAT!
+- [x] Open them all up on different tabs in your browser! They're all unique and independent containers serving you information! NEAT!
 
 **Not only can you spin up as many containers as you want from the single image we made with our app (which is crazy cool and great for horizontally scaling), but all the containers are unique and don't interact with each other; the containers are identical, unique, and isolated at the same time!**
 
-- [ ] Lastly, clean up after yourself. If you created all of the containers with the ` --rm` flag you just need to stop all the running containers with `docker stop <container-name>` and they will automatically delete themselves.
+- [ x] Lastly, clean up after yourself. If you created all of the containers with the ` --rm` flag you just need to stop all the running containers with `docker stop <container-name>` and they will automatically delete themselves.
 
 ---
 >Final Notes: Different base layer images have different instructions when used in Dockerfiles and require different configuration steps. For example, some images already have a working directory that you need to copy your source code into.
@@ -205,7 +205,7 @@ docker run -d -p 4000:3000 --rm nodeserver
 
 ---
 
-- [ ] That's it! Great job powering through this module! To dive in even deeper, head on over to [Module 4](https://github.com/dylanlrrb/Please-Contain-Yourself/tree/master/4-Containerized_Development_With_Volumes) - Containerized Development with Volumes
+- [x s] That's it! Great job powering through this module! To dive in even deeper, head on over to [Module 4](https://github.com/dylanlrrb/Please-Contain-Yourself/tree/master/4-Containerized_Development_With_Volumes) - Containerized Development with Volumes
 
 ---
 #### Things we've learned:
